@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./design/desktop-design.jpg)
 
 ### Links
 
@@ -42,6 +42,3 @@ Users should be able to:
 - Website - [Makram Ibrahim](https://www.sleepingpharaoh.com)
 - Frontend Mentor - [@pharaohmak](https://www.frontendmentor.io/profile/pharaohmak)
 - Twitter - [@pharaohmak](https://www.twitter.com/pharaohmak)
-
-
-
