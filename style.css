@@ -1,63 +1,100 @@
-* {
-    background-color: hsl(217, 54%, 11%);
-    
+:root {
+    /* Neutral */
+    --very-dark-blue1: hsl(217, 54%, 11%);
+    /* main BG */
+    --very-dark-blue2: hsl(216, 50%, 16%);
+    /* Card BG */
+    --very-dark-blue3: hsl(215, 32%, 27%);
+    /* Line */
+    --white: hsl(0, 0%, 100%);
+    /* Primary */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
 }
 
-section {
-    display: grid;
-    justify-content: center;
+body {
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--very-dark-blue1);
 }
 
+h1 {
+    color: var(--white);
+    font-weight: 400;
+}
+
+p {
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.tags .eth {
+    color: var(--cyan);
+    font-weight: 300;
+}
+
+.tags .clock {
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+#container {
+    max-width: 20rem;
+    margin: 0 auto;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
 
 .card {
-    display: grid;
-    padding: 22px;
-    border: 33px;
-    margin: 12px;
-    height: 660px;
-    background-color: hsl(216, 50%, 16%);
-    justify-content: center;
-    align-content: center;
-    border-radius: 3%;
-    
-
+    padding: 1em;
+    border-radius: 12px;
+    background-color: var(--very-dark-blue2);
 }
 
-.image-container {
-    display: grid;
-    padding: 0px;
-    border: 20px;
-    margin: 18px;
-    
-}
-
-.details {
-    background-color: hsl(216, 50%, 16%);
-    border-bottom-left-radius: 3%;
-}
-
-.title {
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(216, 50%, 16%);
-
-}
-
-.description {
-    background-color: hsl(216, 50%, 16%);
-}
-
-.nft-data {
+.tags {
     display: flex;
     justify-content: space-between;
-    background-color: hsl(216, 50%, 16%);
+    width: 100%;
+    padding-bottom: 1em;
 }
 
-.nft-data img {
-    background-color: hsl(216, 50%, 16%);
-
+.tags img {
+    object-fit: contain;
+    height: 18px;
+    width: auto;
+    padding-right: .5em;
 }
-
 
 .creator {
     display: flex;
+    width: 100%;
+    place-content: center;
+}
+
+.creator img {
+    width: auto;
+    margin-right: 1em;
+    border: solid 1px white;
+    border-radius: 50%;
+}
+
+.creator .name {
+    color: var(--white);
+    padding-left: 3px;
+}
+
+.line {
+    border: solid 1px var(--very-dark-blue3);
+}
+
+footer {
+    padding-top: 1em;
+    color: var(--soft-blue);
+    font-weight: 300;
 }
